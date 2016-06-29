@@ -14,8 +14,6 @@
 \usepackage[numbers]{natbib}
 \usepackage{cleveref}
 \usepackage{wrapfig}
-\usepackage{algorithm}
-\usepackage{algorithmic}
 \usepackage{enumerate}
 \usepackage{cancel}
 \usepackage{mathrsfs}
@@ -28,6 +26,9 @@
 \usepackage[vertfit]{breakurl}
 \usepackage{datetime}
 \usepackage{pdfpages}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
 % \usepackage{biblatex}
 \usetikzlibrary{shapes,arrows, trees}
 \input{preamble}
@@ -95,7 +96,7 @@ the material presented in the thesis titled
 \textbf{Secure Deduplication Across Files}
 \end{center}
 
-\noindent represents original work carried out by me in the \textbf{Deparment
+\noindent represents original work carried out by me in the \textbf{Department
 of Computer Science and Automation} at \textbf{Indian Institute of
 Science} during the years \textbf{2014-2016}.
 
@@ -177,6 +178,7 @@ DEDICATED TO \\[2em]
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
+
 \frontmatter % book mode only
 \pagenumbering{roman}
 
@@ -188,7 +190,7 @@ DEDICATED TO \\[2em]
 \prefacesection{Abstract}
 \input{abstract}
 
-\prefacesection{Publications based on this Thesis}
+%\prefacesection{Publications based on this Thesis}
 % \input{publications}
 
 \tableofcontents
@@ -202,11 +204,12 @@ DEDICATED TO \\[2em]
 \mainmatter % book mode only
 \setcounter{page}{1}
 \input{chap_introduction}
-% \input{chap_review}
-% \input{chap_skill_elicitation}
-% \input{chap_resource_critical}
-% \input{chap_team_formation}
-% \input{chap_conclusions}
+\input{chap_review}
+\input{chap_prelims}
+\input{chap_imle}
+\input{chap_construction}
+\input{chap_results}
+\input{chap_future}
 
 % \backmatter % book mode only
 % \appendix

@@ -1,0 +1,27 @@
+\chapter{Review}
+\label{chap:review}
+
+\begin{quote} \small
+	We will briefly look at the related works in the Secure Deduplication field
+\end{quote}
+
+Douceur et al. \cite{convergentEnc} were the first to propose a novel deterministic cryptosystem
+called \textit{convergent encryption} (CE) that enables deduplication to work with
+encryption. The idea was to derive the encryption key from the message itself. This
+will result in users possessing the same message to end up with the same ciphertext.
+\\ \\
+Halevi et al. \cite{proofOwner} identified several attacks that exploit client-side
+deduplication and introduced the concept of proofs-of-ownership to mitigate these. This
+work was extended to get a secure client-side deduplication by Xu et al. in \cite{weakLeakage}.
+\\ \\
+Bellare et al. in their 2013 paper \cite{mle} formalized the notions of security
+in secure deduplication using a new cryptographic primitive called 
+\textit{Message-Locked Encryption} (MLE) which subsumes CE. 
+The paper was the first to formally argue
+the security of secure deduplication and analysed the security of existing schemes as
+well as put forward new practical security schemes.
+\\ \\
+In \cite{imle} Bellare et al. built upon MLE and put forward a new scheme they called
+\textit{Interactive Message-Locked Encryption} (iMLE) in which upload and download are
+protocols. They modelled privacy and security as games that enabled to argue for stronger notions
+of security such as when an adversary controls multiple clients.
