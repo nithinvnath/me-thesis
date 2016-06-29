@@ -25,7 +25,7 @@ Based on the granularity of deduplication, two different flavours exist:
 	each block is checked for redundancy. This is more fine-grained and has its own
 	advantages and disadvantages.
 \end{enumerate}
-
+\noindent
 Based on the deduplication architecture, there are two different strategies:
 \begin{enumerate}
 	\item \textit{Server-side deduplication}: Here the clients are oblivious to any of the
@@ -81,14 +81,14 @@ will be uploaded as $C_\psi$ and $\Delta_2$. The server needs to store only $\De
 if Bob were also to upload $w_1$, deduplication is still achieved.
 
 \begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.5]{example.png}
 	\caption{Rectangle box represents the entire message space. Only one of many balls is shown}
 	\label{fig:example}
 \end{figure}
 
-
-
-The rest of the paper is organised as follows: Section \ref{prelim} discusses the preliminaries needed 
-and the ingredients that are used in this paper. Section \ref{sec:imle} explains Interactive MLE scheme
+\noindent
+The rest of the paper is organised as follows: Chapter \ref{chap:prelims} discusses the preliminaries needed 
+and the ingredients that are used in this paper. Chapter \ref{chap:imle} explains Interactive MLE scheme
 introduced in \cite{imle}, the adversarial model and the security game used. The construction of $\scheme$
-is explained in section \ref{sec:constr} and its security is proved in section \ref{sec:res}.
+is explained in chapter \ref{chap:constr} and its security is proved in chapter \ref{chap:results}.

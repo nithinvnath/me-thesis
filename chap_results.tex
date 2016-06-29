@@ -28,25 +28,27 @@ In the \textsc{Priv} game, the source $S$ outputs two vectors $\textbf{m}_0, \te
 
 Let $\mathsf{S}$ be an unpredictable PT source and $C$ be a compatible error correcting coding scheme. $\mathsf{S}$ outputs $m(\secpar)$ plaintexts each of length $\ell(\secpar, i)$. We denote the polynomial time adversary using $A$. The number of messages stored by the adversary is bounded by $n: \NN \rightarrow \NN$ and the number of random oracle queries made by source and adversary is bounded by $q_S(\secpar): \NN \rightarrow \NN $ and $q_A(\secpar): \NN \rightarrow \NN $
 \\ 
-We will use a hybrid argument to show the privacy of the $\scheme$. Consider the \textsc{Priv} game in the following figure.\\
-\begin{figure}[H]
+We will use a hybrid argument to show the privacy of the $\scheme$. Consider the \textsc{Priv} game in the figure \ref{fig:priv}.\\
+\begin{figure}
 	\centering
-	\includegraphics[scale=0.25]{Priv_game}
+	\includegraphics[scale=0.3]{Priv_game}
 	\caption{The \textit{main} function of the \textsc{Priv} game}
+	\label{fig:priv}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[scale=0.35]{H2}
+	\includegraphics[scale=0.4]{H2}
 	\caption{The $\mathsf{Put}$ protocol in game $H_2$}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[scale=0.35]{H3}
+	\includegraphics[scale=0.4]{H3}
 	\caption{The $\mathsf{Put}$ protocol in game $H_3$}
 \end{figure}
 
+\noindent
 The \textsc{Reg, Step, Msg} and \textsc{State} are same as in the \textsc{Priv} game. The $\mathsf{Put}$ protocol changes in each hybrid game.
 Let $H_1$ denote the actual $\mathsf{Put}$ protocol from figure \ref{fig:put} with the only difference being that instead of $H$, it uses $RO$. In the game $H_2$, the $k$ is sampled randomly instead of using the extractor output. This will give the adversary with an $\epsilon$ advantage since the extractor output is $\epsilon$ close to uniform distribution.
 
@@ -69,7 +71,7 @@ In game $H_4$, $\psi$ is an encryption of a random string. The CPA-security of t
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{H4}
+	\includegraphics[scale=0.5]{H4}
 	\caption{The $\mathsf{Put}$ protocol in game $H_4$}
 \end{figure}        
 
